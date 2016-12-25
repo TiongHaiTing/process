@@ -1,0 +1,173 @@
+Id,Title,Labels,Iteration,Iteration Start,Iteration End,Type,Estimate,Current State,Created at,Accepted at,Deadline,Requested By,Description,URL,process ID,Other ID,Integration,Owned By,Owned By,Comment,Comment,Comment,Comment,Comment,Task,Task Status,Task,Task Status,Task,Task Status,Task,Task Status,Task,Task Status
+3200879,Purchase Ticket,purchaseticket,,,,epic,,,"Dec 10, 2016",,,,,https://www.pivotaltracker.com/epic/show/3200879,,,,,,,,,,,,,,,,,,,,
+3158029,Membership,membership,,,,epic,,,"Nov 19, 2016",,,,This story is used to maintain member information,https://www.pivotaltracker.com/epic/show/3158029,,,,,,,,,,,,,,,,,,,,
+3157989,Make Payment,make payment,,,,epic,,,"Nov 19, 2016",,,,This story is about make payment,https://www.pivotaltracker.com/epic/show/3157989,,,,,,,,,,,,,,,,,,,,
+3157917,Manage bus,manage bus,,,,epic,,,"Nov 19, 2016",,,,The story is about manage bus information,https://www.pivotaltracker.com/epic/show/3157917,,,,,,,,,,,,,,,,,,,,
+3157893,Search engine,search engine,,,,epic,,,"Nov 19, 2016",,,,"The story is about search bus route and destination.
+",https://www.pivotaltracker.com/epic/show/3157893,,,,,,,,,,,,,,,,,,,,
+3157825,Maintain Staff,maintainstaff,,,,epic,,,"Nov 18, 2016",,,,This story is used to maintain staff information,https://www.pivotaltracker.com/epic/show/3157825,,,,,,,,,,,,,,,,,,,,
+134632479,Add New Staff,maintainstaff,1,"Dec 19, 2016","Dec 25, 2016",feature,3,started,"Nov 18, 2016",,,HaiTing,,https://www.pivotaltracker.com/story/show/134632479,,,,HaiTing,,"Commit by TiongHaiTing
+https://github.com/TiongHaiTing/qeq/commit/4b3fe852857ac0ddaf5ad7a444df19d4e6b0ba6d
+
+[Finished #134632479] | [Finished #134634713] | [Finished #134634691] (HaiTing - Dec 10, 2016)","Commit by TiongHaiTing
+https://github.com/TiongHaiTing/process2/commit/36fce1c9884cfa724dde933c8f3a78534284d5c4
+
+[Finished #134632495] | [Finished #134632489] | {Finished #134632489] | [Finished #134632487] | [Finished #134632481] | [Finished #134632479]
+
+1 Developer : [Tiong Hai Ting]
+2 Time: 19/11/2016 11:00 am
+3 Use Case: [#3157825], [Maintain Staff] (HaiTing - Dec 10, 2016)",,,,Display Registration Form,not completed,Enter new Staff Information,not completed,New Staff Information Validation Checking,not completed,Add New Staff Information to Database,not completed
+134632481,Update Staff,maintainstaff,1,"Dec 19, 2016","Dec 25, 2016",feature,1,started,"Nov 18, 2016",,,HaiTing,,https://www.pivotaltracker.com/story/show/134632481,,,,HaiTing,,"Commit by TiongHaiTing
+https://github.com/TiongHaiTing/process2/commit/36fce1c9884cfa724dde933c8f3a78534284d5c4
+
+[Finished #134632495] | [Finished #134632489] | {Finished #134632489] | [Finished #134632487] | [Finished #134632481] | [Finished #134632479]
+
+1 Developer : [Tiong Hai Ting]
+2 Time: 19/11/2016 11:00 am
+3 Use Case: [#3157825], [Maintain Staff] (HaiTing - Dec 10, 2016)",,,,,Select an existing staff,not completed,Enter New Information,not completed,Validates Updated Infomation ,not completed,Update staff information from Database,not completed
+134632487,delete Staff,maintainstaff,1,"Dec 19, 2016","Dec 25, 2016",feature,1,started,"Nov 18, 2016",,,HaiTing,,https://www.pivotaltracker.com/story/show/134632487,,,,HaiTing,,"Commit by TiongHaiTing
+https://github.com/TiongHaiTing/process2/commit/36fce1c9884cfa724dde933c8f3a78534284d5c4
+
+[Finished #134632495] | [Finished #134632489] | {Finished #134632489] | [Finished #134632487] | [Finished #134632481] | [Finished #134632479]
+
+1 Developer : [Tiong Hai Ting]
+2 Time: 19/11/2016 11:00 am
+3 Use Case: [#3157825], [Maintain Staff] (HaiTing - Dec 10, 2016)",,,,,Select Existing Staff,not completed,Select Delete option,not completed,Confirm Delete Staff,not completed,Database removes the staff Information,not completed
+134632489,View Staff List,maintainstaff,1,"Dec 19, 2016","Dec 25, 2016",feature,2,started,"Nov 18, 2016",,,HaiTing,,https://www.pivotaltracker.com/story/show/134632489,,,,HaiTing,,"Commit by TiongHaiTing
+https://github.com/TiongHaiTing/process2/commit/36fce1c9884cfa724dde933c8f3a78534284d5c4
+
+[Finished #134632495] | [Finished #134632489] | {Finished #134632489] | [Finished #134632487] | [Finished #134632481] | [Finished #134632479]
+
+1 Developer : [Tiong Hai Ting]
+2 Time: 19/11/2016 11:00 am
+3 Use Case: [#3157825], [Maintain Staff] (HaiTing - Dec 10, 2016)",,,,,Select view staff list,not completed,Database retrieves all staffs information,not completed
+134632495,View Staff Profile,maintainstaff,1,"Dec 19, 2016","Dec 25, 2016",feature,2,started,"Nov 18, 2016",,,HaiTing,,https://www.pivotaltracker.com/story/show/134632495,,,,HaiTing,,"Commit by TiongHaiTing
+https://github.com/TiongHaiTing/qeq/commit/9e824f0d15afdc44eadb120db72c389712432e41
+
+[Finished #134632495] (HaiTing - Nov 27, 2016)","Commit by TiongHaiTing
+https://github.com/TiongHaiTing/process2/commit/36fce1c9884cfa724dde933c8f3a78534284d5c4
+
+[Finished #134632495] | [Finished #134632489] | {Finished #134632489] | [Finished #134632487] | [Finished #134632481] | [Finished #134632479]
+
+1 Developer : [Tiong Hai Ting]
+2 Time: 19/11/2016 11:00 am
+3 Use Case: [#3157825], [Maintain Staff] (HaiTing - Dec 10, 2016)",,,,Enter Staff ID,not completed,Validate Staff ID,not completed,Retrieve from database ,not completed,Display Staff Details,not completed
+134637839,View Member List,membership,1,"Dec 19, 2016","Dec 25, 2016",feature,2,started,"Nov 19, 2016",,,dick son,,https://www.pivotaltracker.com/story/show/134637839,,,,HaiTing,,"Commit by TiongHaiTing
+https://github.com/TiongHaiTing/process2/commit/da640d3234b63ccafab67f82b51dac93ef4a67f5
+
+[Finished #134637917] | [Finished #134637895] | [Finished #134637867] | [Finished #134637839]
+
+1 Developer : [Cheah Dick Son]
+2 Time: 19/11/2016 11:00 am
+3 Use Case: [##3158029], [Memberships] (HaiTing - Dec 10, 2016)",,,,,Select view member list,not completed,Database retrieves all member information,not completed
+134637867,delete Member ,membership,1,"Dec 19, 2016","Dec 25, 2016",feature,1,started,"Nov 19, 2016",,,dick son,,https://www.pivotaltracker.com/story/show/134637867,,,,HaiTing,,"Commit by TiongHaiTing
+https://github.com/TiongHaiTing/process2/commit/da640d3234b63ccafab67f82b51dac93ef4a67f5
+
+[Finished #134637917] | [Finished #134637895] | [Finished #134637867] | [Finished #134637839]
+
+1 Developer : [Cheah Dick Son]
+2 Time: 19/11/2016 11:00 am
+3 Use Case: [##3158029], [Memberships] (HaiTing - Dec 10, 2016)",,,,,Select existing member,not completed,Select delete option,not completed,Confirm delete member,not completed,Database removes the member information,not completed
+134637895,Update Member,membership,1,"Dec 19, 2016","Dec 25, 2016",feature,1,started,"Nov 19, 2016",,,dick son,,https://www.pivotaltracker.com/story/show/134637895,,,,HaiTing,,"Commit by TiongHaiTing
+https://github.com/TiongHaiTing/process2/commit/da640d3234b63ccafab67f82b51dac93ef4a67f5
+
+[Finished #134637917] | [Finished #134637895] | [Finished #134637867] | [Finished #134637839]
+
+1 Developer : [Cheah Dick Son]
+2 Time: 19/11/2016 11:00 am
+3 Use Case: [##3158029], [Memberships] (HaiTing - Dec 10, 2016)",,,,,Select an existing member,not completed,Enter new information,not completed,Validates updated information,not completed,Update member information from database,not completed
+134637917,Add new Member ,membership,1,"Dec 19, 2016","Dec 25, 2016",feature,3,started,"Nov 19, 2016",,,dick son,,https://www.pivotaltracker.com/story/show/134637917,,,,HaiTing,,"Commit by TiongHaiTing
+https://github.com/TiongHaiTing/process2/commit/da640d3234b63ccafab67f82b51dac93ef4a67f5
+
+[Finished #134637917] | [Finished #134637895] | [Finished #134637867] | [Finished #134637839]
+
+1 Developer : [Cheah Dick Son]
+2 Time: 19/11/2016 11:00 am
+3 Use Case: [##3158029], [Memberships] (HaiTing - Dec 10, 2016)",,,,,Display registration from,not completed,Enter new member information,not completed,New member Information validation checking,not completed,Add new member information to database,not completed
+136642117,View Tickets Histories,purchaseticket,2,"Dec 26, 2016","Jan 1, 2017",feature,1,unstarted,"Dec 24, 2016",,,HaiTing,,https://www.pivotaltracker.com/story/show/136642117,,,,HaiTing,
+136642111,cancel Ticket,purchaseticket,2,"Dec 26, 2016","Jan 1, 2017",feature,1,unstarted,"Dec 24, 2016",,,HaiTing,,https://www.pivotaltracker.com/story/show/136642111,,,,HaiTing,
+135906431,Add new Ticket,purchaseticket,2,"Dec 26, 2016","Jan 1, 2017",feature,3,unstarted,"Dec 10, 2016",,,HaiTing,,https://www.pivotaltracker.com/story/show/135906431,,,,HaiTing,,,,,,,Display Available Bus Ticket,not completed,Enter Bus Details,not completed,Check Seat,not completed,Add new purchased to database,not completed
+135906701,delete Ticket,purchaseticket,2,"Dec 26, 2016","Jan 1, 2017",feature,1,unstarted,"Dec 10, 2016",,,HaiTing,,https://www.pivotaltracker.com/story/show/135906701,,,,HaiTing,,,,,,,enter ticket id,not completed,validate ticket id,not completed,confirm delete action,not completed,delete ticket from database,not completed
+135906611,Update Ticket,purchaseticket,2,"Dec 26, 2016","Jan 1, 2017",feature,2,unstarted,"Dec 10, 2016",,,HaiTing,,https://www.pivotaltracker.com/story/show/135906611,,,,HaiTing,,,,,,,Enter ticket id,not completed,Validate id ,not completed,Display update form,not completed,Enter update information,not completed,update ticket information to database,not completed
+134637101,View Payment History,make payment,2,"Dec 26, 2016","Jan 1, 2017",feature,1,unstarted,"Nov 19, 2016",,,Ck Hou,,https://www.pivotaltracker.com/story/show/134637101,,,,Ck Hou,HaiTing,,,,,,Select view payment history,not completed,Retrieve all payment history from database,not completed
+134637073,Cancel payment,make payment,2,"Dec 26, 2016","Jan 1, 2017",feature,1,unstarted,"Nov 19, 2016",,,Ck Hou,,https://www.pivotaltracker.com/story/show/134637073,,,,HaiTing,,,,,,,Select cancel payment option,not completed,Confirm cancel payment,not completed,Database will remove the payment,not completed
+136642151,Manage Payment Account,make payment,3,"Jan 2, 2017","Jan 8, 2017",feature,2,unstarted,"Dec 24, 2016",,,HaiTing,,https://www.pivotaltracker.com/story/show/136642151,,,,HaiTing,
+134637031,Make payment,make payment,3,"Jan 2, 2017","Jan 8, 2017",feature,3,unstarted,"Nov 19, 2016",,,Ck Hou,,https://www.pivotaltracker.com/story/show/134637031,,,,HaiTing,,,,,,,Display the payment form,not completed,Enter credit card information,not completed,Credit card validation checking,not completed,Add payment to database,not completed
+134635017,Update bus information,manage bus,3,"Jan 2, 2017","Jan 8, 2017",feature,1,unstarted,"Nov 19, 2016",,,zingao tan,,https://www.pivotaltracker.com/story/show/134635017,,,,HaiTing,,"Commit by TiongHaiTing
+https://github.com/TiongHaiTing/process2/commit/eceb7374bfb085007c66821afe4abe30466b4f18
+
+[Finished #134634975] | [Finished #134635057] |  [Finished #134635039] | [Finished #134635033] | [Finished #134635017]
+
+1 Developer : [Chang Kar Hou]
+2 Time: 11/12/2016 11:00 am
+3 Use Case: [##3157917], [Manage Bus] (HaiTing - Dec 10, 2016)",,,,,Select a bus,not completed,Edit new information,not completed,Validation updated information,not completed,Update the current bus n database,not completed
+134635033,Delete bus,manage bus,3,"Jan 2, 2017","Jan 8, 2017",feature,1,unstarted,"Nov 19, 2016",,,zingao tan,,https://www.pivotaltracker.com/story/show/134635033,,,,HaiTing,,"Commit by TiongHaiTing
+https://github.com/TiongHaiTing/process2/commit/eceb7374bfb085007c66821afe4abe30466b4f18
+
+[Finished #134634975] | [Finished #134635057] |  [Finished #134635039] | [Finished #134635033] | [Finished #134635017]
+
+1 Developer : [Chang Kar Hou]
+2 Time: 11/12/2016 11:00 am
+3 Use Case: [##3157917], [Manage Bus] (HaiTing - Dec 10, 2016)",,,,,Select a bus,not completed,Select delete option,not completed,Show confirm message,not completed,Delete the current bus in database,not completed
+134635039,View bus information,manage bus,3,"Jan 2, 2017","Jan 8, 2017",feature,2,unstarted,"Nov 19, 2016",,,zingao tan,,https://www.pivotaltracker.com/story/show/134635039,,,,HaiTing,,"Commit by TiongHaiTing
+https://github.com/TiongHaiTing/process2/commit/eceb7374bfb085007c66821afe4abe30466b4f18
+
+[Finished #134634975] | [Finished #134635057] |  [Finished #134635039] | [Finished #134635033] | [Finished #134635017]
+
+1 Developer : [Chang Kar Hou]
+2 Time: 11/12/2016 11:00 am
+3 Use Case: [##3157917], [Manage Bus] (HaiTing - Dec 10, 2016)",,,,,Select a bus,not completed,Retrieve the bus information from database,not completed
+134634975,Add new bus,manage bus,4,"Jan 9, 2017","Jan 15, 2017",feature,3,unstarted,"Nov 19, 2016",,,zingao tan,,https://www.pivotaltracker.com/story/show/134634975,,,,HaiTing,,"Commit by TiongHaiTing
+https://github.com/TiongHaiTing/process2/commit/eceb7374bfb085007c66821afe4abe30466b4f18
+
+[Finished #134634975] | [Finished #134635057] |  [Finished #134635039] | [Finished #134635033] | [Finished #134635017]
+
+1 Developer : [Chang Kar Hou]
+2 Time: 11/12/2016 11:00 am
+3 Use Case: [##3157917], [Manage Bus] (HaiTing - Dec 10, 2016)",,,,,Click add new bus,not completed,Enter the bus information,not completed,Validation before store in database,not completed,Add new bus into database,not completed
+134635057,View all bus,manage bus,4,"Jan 9, 2017","Jan 15, 2017",feature,2,unstarted,"Nov 19, 2016",,,zingao tan,,https://www.pivotaltracker.com/story/show/134635057,,,,HaiTing,,"Commit by TiongHaiTing
+https://github.com/TiongHaiTing/process2/commit/eceb7374bfb085007c66821afe4abe30466b4f18
+
+[Finished #134634975] | [Finished #134635057] |  [Finished #134635039] | [Finished #134635033] | [Finished #134635017]
+
+1 Developer : [Chang Kar Hou]
+2 Time: 11/12/2016 11:00 am
+3 Use Case: [##3157917], [Manage Bus] (HaiTing - Dec 10, 2016)",,,,,Select view all bus,not completed,Retrieve all bus information from database,not completed
+134634717,View bus schedule,search engine,4,"Jan 9, 2017","Jan 15, 2017",feature,3,unstarted,"Nov 19, 2016",,,zingao tan,,https://www.pivotaltracker.com/story/show/134634717,,,,HaiTing,,"Commit by TiongHaiTing
+https://github.com/TiongHaiTing/qeq/commit/4f740668f32a447caec3177d36c7aac5dd8c0930
+
+[Finished #134634717] (HaiTing - Dec 10, 2016)","Commit by TiongHaiTing
+https://github.com/TiongHaiTing/qeq/commit/f3a3bc63697d604e6a40c708556785413db0accf
+
+[Finished #134634717] (HaiTing - Dec 10, 2016)","Commit by TiongHaiTing
+https://github.com/TiongHaiTing/qeq/commit/46a750d986e6928a8ae891e3a402c401a5a62be2
+
+[Finish #134634717] (HaiTing - Dec 10, 2016)","Commit by TiongHaiTing
+https://github.com/TiongHaiTing/qeq/commit/5a15b5eae3402170cc3dc3e7eff8bf13cf5f7ca7
+
+[Finished #134634717] (HaiTing - Dec 10, 2016)","Commit by TiongHaiTing
+https://github.com/TiongHaiTing/process2/commit/2daf242299cc0f5d24bc0d220dc6ec7a1b32adf1
+
+[Finished #134634717] (HaiTing - Dec 10, 2016)",Select view bus schedule,not completed,Retrieve all bus route from database,not completed
+134634713,View bus route,search engine,4,"Jan 9, 2017","Jan 15, 2017",feature,2,unstarted,"Nov 19, 2016",,,zingao tan,,https://www.pivotaltracker.com/story/show/134634713,,,,HaiTing,,"Commit by TiongHaiTing
+https://github.com/TiongHaiTing/qeq/commit/4b3fe852857ac0ddaf5ad7a444df19d4e6b0ba6d
+
+[Finished #134632479] | [Finished #134634713] | [Finished #134634691] (HaiTing - Dec 10, 2016)","Commit by TiongHaiTing
+https://github.com/TiongHaiTing/process2/commit/2a37ed31be13700cd10da9701eb9c15d04222020
+
+[Finished #134634713] | [Finished #134634691]
+
+1 Developer : [Tan Zin Gao]
+2 Time: 11/12/2016 11:00 am
+3 Use Case: [#3157893], [Search Engine] (HaiTing - Dec 10, 2016)",,,,Select a bus,not completed,Retrieve the bus route information from database,not completed
+134634691,Search destination,search engine,5,"Jan 16, 2017","Jan 22, 2017",feature,2,unstarted,"Nov 19, 2016",,,zingao tan,,https://www.pivotaltracker.com/story/show/134634691,,,,zingao tan,HaiTing,"Commit by TiongHaiTing
+https://github.com/TiongHaiTing/qeq/commit/4b3fe852857ac0ddaf5ad7a444df19d4e6b0ba6d
+
+[Finished #134632479] | [Finished #134634713] | [Finished #134634691] (HaiTing - Dec 10, 2016)","Commit by TiongHaiTing
+https://github.com/TiongHaiTing/process2/commit/2a37ed31be13700cd10da9701eb9c15d04222020
+
+[Finished #134634713] | [Finished #134634691]
+
+1 Developer : [Tan Zin Gao]
+2 Time: 11/12/2016 11:00 am
+3 Use Case: [#3157893], [Search Engine] (HaiTing - Dec 10, 2016)",,,,Select a destination,not completed,Retrieve the exist destination information from database,not completed
