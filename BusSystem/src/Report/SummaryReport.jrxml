@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1f361c98-f3f7-4a14-b165-6a5c3fef9ab9">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     schedule.`scheduleId` AS schedule_scheduleId,
+     schedule.`departDate` AS schedule_departDate,
+     COUNT(ticket.`ticketId`) AS ticket_ticketId,
+     ticket.`scheduleId` AS ticket_scheduleId,
+     SUM(ticket.`totalAmount`) AS ticket_totalAmount
+FROM
+     `schedule` schedule,
+     `ticket` ticket
+WHERE
+schedule.`scheduleId` =  ticket.`scheduleId` AND
+schedule.`departDate` BETWEEN '2016-01-01' AND '2016-12-31';]]>
+	</queryString>
+	<field name="ticket_ticketId" class="java.lang.Long"/>
+	<field name="ticket_totalAmount" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="136" splitType="Stretch">
+			<staticText>
+				<reportElement style="Title" x="241" y="0" width="263" height="62" forecolor="#0099CC" uuid="60a0532a-7c34-4e37-8c6d-9080408c9529"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Impact" size="24" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Happy Journey Express]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="184" y="95" width="318" height="28" forecolor="#0099CC" uuid="d19977e3-b750-4ade-9da0-d8d25a63bfef"/>
+				<textElement textAlignment="Right">
+					<font fontName="Impact" size="18"/>
+				</textElement>
+				<text><![CDATA[Report Date: 01/01/2016 - 31/12/2016]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="258" y="62" width="246" height="22" forecolor="#0099CC" uuid="6aaf06b8-cea6-4e0c-992f-56cfb0d24aed"/>
+				<textElement>
+					<font fontName="Impact" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Ticket Sold Yearly Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="802" height="1" uuid="9b47d8c4-053c-499d-94f7-37130767e79a"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="0" y="0" width="401" height="15" forecolor="#736343" uuid="f7465c01-2609-40b5-a719-a47d5a8cbe6c"/>
+				<text><![CDATA[Number of Ticket]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="401" y="0" width="401" height="15" forecolor="#736343" uuid="de1ecef6-4349-4f97-b2ed-8b5efb170069"/>
+				<text><![CDATA[Total Amount (RM)]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<frame>
+				<reportElement style="Row" mode="Opaque" x="0" y="0" width="802" height="15" uuid="0c60908e-f000-4a81-9b6b-138858256e41"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="0" y="0" width="401" height="15" uuid="e69af109-bfea-4d1f-aee0-d8352710c3ac"/>
+					<textFieldExpression><![CDATA[$F{ticket_ticketId}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="401" y="0" width="401" height="15" uuid="540ee17f-8d53-4300-a6ad-cb20f3307ac7"/>
+					<textFieldExpression><![CDATA[$F{ticket_totalAmount}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="6" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="802" height="1" uuid="1eda4878-c18c-4ae9-a10c-08d0f073d25b"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="-21" y="1" width="843" height="24" forecolor="#D0B48E" backcolor="#F2EBDF" uuid="65b02641-6816-4283-a8b4-28772fc4d02f"/>
+				<textField evaluationTime="Report">
+					<reportElement style="Column header" x="783" y="1" width="40" height="20" forecolor="#736343" uuid="da319cae-439c-4e48-b03b-329a3f7aa6b2"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Column header" x="703" y="1" width="80" height="20" forecolor="#736343" uuid="86b77c25-9576-4870-8fe3-8df1ca5bba2c"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+				</textField>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement style="Column header" x="22" y="1" width="197" height="20" forecolor="#736343" uuid="0e0792ed-aa94-446a-9ca6-56bf8ee82394"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

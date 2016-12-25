@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b65a18fc-d138-464d-82c3-1a696183968a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="Schedule ID" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     schedule.`scheduleId` AS schedule_scheduleId,
+     schedule.`departDate` AS schedule_departDate,
+     ticket.`ticketId` AS ticket_ticketId,
+     ticket.`scheduleId` AS ticket_scheduleId,
+     COUNT(seatticket.`seatTicketId`) AS seatticket_seatTicketId,
+     seatticket.`ticketId` AS seatticket_ticketId,
+     seatticket.`status` AS seatticket_status
+FROM
+     `schedule` schedule,
+     `ticket` ticket,
+     `seatticket` seatticket
+WHERE
+(schedule.`scheduleId` = ticket.`scheduleId`) AND
+(ticket.`ticketId` = seatticket.`ticketId`) AND
+(schedule.`departDate` between '2016-03-01' and '2016-03-31')AND
+seatticket.`status`='Unavailable'
+group by schedule.`scheduleId`;]]>
+	</queryString>
+	<field name="schedule_scheduleId" class="java.lang.String"/>
+	<field name="schedule_departDate" class="java.sql.Date"/>
+	<field name="ticket_ticketId" class="java.lang.String"/>
+	<field name="ticket_scheduleId" class="java.lang.String"/>
+	<field name="seatticket_seatTicketId" class="java.lang.Long"/>
+	<field name="seatticket_ticketId" class="java.lang.String"/>
+	<field name="seatticket_status" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="136" splitType="Stretch">
+			<staticText>
+				<reportElement style="Title" x="253" y="0" width="263" height="62" forecolor="#0099CC" uuid="87cba626-edde-4f3c-be46-02fdf5a0c1de"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Impact" size="24" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Happy Journey Express]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="263" y="62" width="293" height="22" forecolor="#0099CC" uuid="a8372e22-f0a4-4c77-b8f9-3a0a81dbd59a"/>
+				<textElement>
+					<font fontName="Impact" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Ticket Cancelled Montly Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="264" y="96" width="200" height="28" forecolor="#0099CC" uuid="8aa08ad5-ab3c-438b-82b1-bf6357ff880c"/>
+				<textElement textAlignment="Right">
+					<font fontName="Impact" size="18"/>
+				</textElement>
+				<text><![CDATA[Report Month: March/2016]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="802" height="1" uuid="d3876f3e-b9e7-4f2f-aa8b-f1b4ff42059a"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="0" y="0" width="267" height="15" forecolor="#736343" uuid="3fa03566-066b-4e4a-8a67-09c1b55ef725"/>
+				<text><![CDATA[Depart Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="267" y="0" width="267" height="15" forecolor="#736343" uuid="60e1b3bd-ee7a-4c41-b494-51367c722557"/>
+				<text><![CDATA[Seat Status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="534" y="0" width="267" height="15" forecolor="#736343" uuid="9390adfd-fd07-4793-9fad-0068c0ead43e"/>
+				<text><![CDATA[Total Seats]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<frame>
+				<reportElement style="Row" mode="Opaque" x="0" y="0" width="802" height="15" uuid="fb96a575-a042-4f53-bb59-6ac56c25be38"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="0" y="0" width="267" height="15" uuid="9045c7e8-0482-4a55-b6a1-c3082695d30d"/>
+					<textFieldExpression><![CDATA[$F{schedule_departDate}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="267" y="0" width="267" height="15" uuid="baa0dce8-b8da-4a4f-8943-40a2602c998b"/>
+					<textFieldExpression><![CDATA[$F{seatticket_status}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="534" y="0" width="267" height="15" uuid="fb236a3c-45f4-4ec2-a78d-56ac6ac1d925"/>
+					<textFieldExpression><![CDATA[$F{seatticket_seatTicketId}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="6" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="802" height="1" uuid="21a14a7a-a5a3-4937-9f4c-88f4fe581a39"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="-21" y="1" width="843" height="24" forecolor="#D0B48E" backcolor="#F2EBDF" uuid="e6c6db27-2b2c-4e30-a45f-81f01fd917b1"/>
+				<textField evaluationTime="Report">
+					<reportElement style="Column header" x="783" y="1" width="40" height="20" forecolor="#736343" uuid="60ac5e0c-5c68-4dde-836c-a83d2027a132"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Column header" x="703" y="1" width="80" height="20" forecolor="#736343" uuid="aea7c6de-e51a-4599-9381-c178f9507c7e"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+				</textField>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement style="Column header" x="22" y="1" width="197" height="20" forecolor="#736343" uuid="d22c09b8-5365-4b46-88bc-42f6bccf5129"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
